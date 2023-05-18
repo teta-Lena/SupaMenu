@@ -62,8 +62,21 @@ const Register = () => {
           />
           <TextInput style={styles.place} placeholder="Password" />
         </View>
-        <View>
-          <Button title="Proceed" style={styles.btn} />
+        <View style={{ marginHorizontal: 20, marginVertical: 20 }}>
+          <Button title="Proceed" buttonStyle={styles.btn} />
+        </View>
+        <View style={styles.formtext}>
+          <Text>---------------------- OR ---------------------------</Text>
+          <Text>If you have a PMG account</Text>
+        </View>
+        <View style={{ marginHorizontal: 20, marginVertical: 20 }}>
+          <Button title="Sign In " buttonStyle={styles.btn} />
+        </View>
+        <View style={styles.formtext}>
+          <Text>
+            Don't have an account?{" "}
+            <Text style={{ color: "#f49e06" }}>Register</Text>
+          </Text>
         </View>
       </View>
     </View>
@@ -87,7 +100,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   txtinput: {
-    borderWidth: 0.5,
+    borderWidth: 1,
     borderRadius: 5,
     marginBottom: 10,
     borderColor: "#7d8c9a",
@@ -104,8 +117,12 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   btn: {
-    width: "80%",
-    margin: "auto",
+    height: 50,
+    borderWidth: 1,
+    paddingHorizontal: 20,
+    backgroundColor: "#f49e06",
+    borderRadius: 10,
+    justifyContent: "center",
   },
   place: {
     paddingLeft: 20,
