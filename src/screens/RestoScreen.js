@@ -7,11 +7,11 @@ const RestoScreen = () => {
       <Text style={styles.resto}>Choose Kigali</Text>
       <View style={styles.options}>
         <View>
-          <Icon name="restaurant" type="material" size={60} />
+          <Icon name="restaurant" type="material" size={60} color={"#f49e06"} />
           <Text style={styles.opttxt}>Ordered</Text>
         </View>
         <View>
-          <Icon name="person" type="material" size={60} />
+          <Icon name="person" type="material" size={60} color={"#f49e06"} />
           <Text style={styles.opttxt}>Call waiter</Text>
         </View>
       </View>

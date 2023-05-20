@@ -6,6 +6,7 @@ import HomeScreen from "./src/screens/AuthScreens/HomeScreen";
 import LoginScreen from "./src/screens/AuthScreens/LoginScreen";
 import SearchRestoScreen from "./src/screens/SearchRestoScreen";
 import RestoScreen from "./src/screens/RestoScreen";
+import DrinksScreen from "./src/screens/DrinksScreen";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       {/* <HomeScreen /> */}
       {/* <LoginScreen /> */}
       {/* <SearchRestoScreen /> */}
-      <RestoScreen />
+      {/* <RestoScreen /> */}
+      <DrinksScreen />
     </View>
   );
 };
