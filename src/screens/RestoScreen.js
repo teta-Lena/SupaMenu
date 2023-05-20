@@ -7,34 +7,34 @@ const RestoScreen = () => {
       <Text style={styles.resto}>Choose Kigali</Text>
       <View style={styles.options}>
         <View>
-          <Icon name="home" type="material" />
-          <Text>Ordered</Text>
+          <Icon name="restaurant" type="material" size={60} />
+          <Text style={styles.opttxt}>Ordered</Text>
         </View>
         <View>
-          <Icon name="person" type="material" />
-          <Text>Call waiter</Text>
+          <Icon name="person" type="material" size={60} />
+          <Text style={styles.opttxt}>Call waiter</Text>
         </View>
       </View>
       <View style={styles.list}>
-        <Text>Menu</Text>
+        <Text style={styles.menu}>Menu</Text>
         <View style={styles.topic}>
-          <Text>Appetizer</Text>
+          <Text style={styles.topictxt}>Appetizer</Text>
           <Icon name="arrow-right" />
         </View>
         <View style={styles.topic}>
-          <Text>Starter</Text>
+          <Text style={styles.topictxt}>Starter</Text>
           <Icon name="arrow-right" />
         </View>
         <View style={styles.topic}>
-          <Text>Main</Text>
+          <Text style={styles.topictxt}>Main</Text>
           <Icon name="arrow-right" />
         </View>
         <View style={styles.topic}>
-          <Text>Dessert</Text>
+          <Text style={styles.topictxt}>Dessert</Text>
           <Icon name="arrow-right" />
         </View>
         <View style={styles.topic}>
-          <Text>Drink</Text>
+          <Text style={styles.topictxt}>Drink</Text>
           <Icon name="arrow-right" />
         </View>
       </View>
@@ -44,16 +44,18 @@ const RestoScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 20,
+    backgroundColor: "black",
+    width: "100%",
+    height: "100%",
   },
 
   options: {
     flexDirection: "row",
     justifyContent: "space-evenly",
-    marginTop: 40,
+    marginTop: 100,
   },
   resto: {
-    marginTop: 70,
+    marginTop: 120,
     textAlign: "center",
     fontSize: 25,
     color: "#f49e06",
@@ -62,6 +64,24 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    marginTop: 10,
+    marginLeft: 40,
+    marginRight: 40,
+  },
+  menu: {
+    fontSize: 40,
+    marginTop: 60,
+    marginBottom: 20,
+    textAlign: "center",
+    color: "#f49e06",
+  },
+  opttxt: {
+    fontSize: 20,
+    color: "white",
+  },
+  topictxt: {
+    color: "white",
+    fontSize: 30,
   },
 });
 

@@ -6,7 +6,7 @@ const Header = () => {
 };
 const styles = StyleSheet.create({
   header: {
-    height: "27%",
+    height: "10%",
     backgroundColor: "#f49e06",
   },
 });

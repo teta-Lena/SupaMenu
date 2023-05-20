@@ -10,12 +10,12 @@ import RestoScreen from "./src/screens/RestoScreen";
 const App = () => {
   return (
     <View>
-      {/* <Header />
-      <Register /> */}
+      {/* <Header /> */}
+      {/* <Register /> */}
       {/* <HomeScreen /> */}
       {/* <LoginScreen /> */}
-      {/* <SearchRestoScreen/> */}
-      <RestoScreen/>
+      {/* <SearchRestoScreen /> */}
+      <RestoScreen />
     </View>
   );
 };
