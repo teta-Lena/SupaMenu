@@ -17,8 +17,109 @@ code {
 
 .home-container {
   height: 100vh;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
 }
 .header{
   background-color: black;
+  height: 40%;
+  
+}
+
+span{
+  color: #f49e06;
+}
+h2{
+  color: white;
+}
+p{
+  color: white;
+}
+
+.user{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.title{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.title h2{
+  font-size: 40px;
+  padding: 0px 30px;
+}
+/* .menu-header{
+  display: block;
+} */
+.menu-header-p{
+  font-size: 20px;
+  font-weight: 700;
+}
+.sub-menu-header{
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.options-btns button:nth-child(1){
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  margin: 12px;
+  background-color: #f49e06;
+  border: none;
+  font-weight: 500;
+}
+
+.options-btns button:nth-child(2){
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  margin: 12px;
+  background-color:black;
+  border: 1px solid white;
+  font-weight: 500;
+}
+.options{
+  background-color: whitesmoke;
+  height: 50%;  
+}
+.options-p{
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  /* padding: 3px; */
+}
+
+.boxes{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  /* background-color: navy; */
+  margin-top: 40px;
+  height:100%;
+  width: 100%; 
+}
+
+.box-step{
+  background-color: white;
+  border: 0.5px solid rgb(237, 233, 227);
+  /* box-shadow:2px 2px 4px 0 rgba(0, 0, 0, 0.2); 
+  */
+  width: 15%;
   height: 50%;
+  padding: 10px;  
+  margin: 10px;
+  align-items: center;
+}
+
+.box-step p{
+  font-size: 15px;
+  padding: 10px;
+  color: black;
 }
