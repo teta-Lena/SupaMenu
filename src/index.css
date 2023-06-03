@@ -123,3 +123,89 @@ p{
   padding: 10px;
   color: black;
 }
+
+.auth-container{
+  background-color: #f49e06;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.form-container{
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.title-container {
+  width: 40%;
+  margin: auto;
+}
+.title-container p{
+  font-size: 60px;
+}
+.input-container {
+  margin: auto;
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+
+}
+.title-container p{
+  font-weight: bolder;
+}
+
+.sp-login{
+  color: black;
+}
+
+.form-data{
+  width: 100%;
+  padding: 20px;
+}
+.form-data input{
+  width: 90%;
+  padding: 5px;
+  opacity: (0,0,0,0.2);
+  border: o.2px solid gainsboro;
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 25px 30px;
+}
+.field input{
+  border-radius: 5px;
+  border: 0.2px solid rgb(0,0,0,0.2);
+  padding: 8px;
+}
+.login-title{
+  color: black;
+  font-size: 20px;
+  font-weight: bold
+}
+.input-container h6{
+  color: #c5c5c3;
+  font-weight: 400;
+}
+
+.input-container h5{
+  color: #c5c5c3;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 3em;
+}
+
+.loginsubmit{
+  background-color: #f49e06;
+  color: white;
+  
+}
+.form-options{
+  font-weight: 200;
+  font-size: 14px;
+  color: black;
+  padding: 10px;
+}
