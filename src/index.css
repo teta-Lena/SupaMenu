@@ -209,3 +209,161 @@ p{
   color: black;
   padding: 10px;
 }
+
+.restoinfo-container{
+  width: 100%;
+  height: 100vh;
+}
+
+.restoinfo-navbar .title h2{
+  color: black;
+}
+.user-details p{
+  color: black;
+  padding: 20px;
+}
+
+.restoinfo-navbar{
+  display: flex;
+  justify-content: space-between  ;
+}
+
+
+
+.info-1 h5{
+  font-size: 15px;
+}
+
+.info-1{
+  height: 80%;
+  width: 20%;
+  border: 0.2px solid blanchedalmond;
+  padding: 10px;
+}
+
+.details {
+  width: 100%;
+  padding: 10px;
+}
+
+.details h6{
+  font-size: 15px;
+}
+.test{
+  width: 100%;
+  padding:10px;
+  height: 50%;
+}
+.info-2{
+  width: 40%;
+  border: 0.2px solid beige;
+
+}
+
+.input-2{
+  display: flex;
+  flex-direction: row ;
+  width: 100%;
+  margin: 2px;
+}
+.form-field{
+  margin: 3px;
+}
+
+.input-container-resto-info{
+  margin: auto;
+  width: 80%;
+  height: 40%;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.restoinfo-body{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60%
+}
+
+.resto-info-no{
+  width: 10%;
+  background-color: #c5c5c3;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 50%;
+}
+.resto-info-true {
+
+    width: 10%;
+    background-color: #f49e06;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 50%;
+}
+.dash-container {
+  display: flex;
+}
+.dash-nav{
+  width: 15%;
+  background-color: rgb(3, 3, 26);
+  height: 100vh;
+}
+.nav-black{
+  height:50%;
+}
+.dash-body{
+  width: 85%;
+}
+.dash-nav p {
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+.dash-nav  nav {
+  margin-top: 20px  ;
+  margin-bottom: 50px;
+}
+.dash-nav ul li{
+  padding: 10px;
+  list-style: none;
+  color:azure;
+}
+.nav-orange{
+  background-color: #f49e06;
+  height:50%;
+}
+
+.num-stats{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  height: 20%;
+  align-items: center;
+}
+.num-stats p {
+  color: black;
+}
+.num-stats div{
+  width: 20%;
+  height: 60%;
+  background-color: blanchedalmond;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto  ;
+}
+ .num-stats div p{
+  font-size: 20px;
+}
+.num-stats div h6{
+  font-size: 25px;
+  margin-top: 5px;
+}
+.dash-graph {
+  height: 40%;
+}
+.dash-data-details{
+  display: flex;
+  height: 40%;
+  width: 100%;
+}
