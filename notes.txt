@@ -1,1 +1,45 @@
 phone number in resto info page
+
+
+   <div>
+                    <h4>Pubs</h4>
+                    <p style={{color:"#f49e06"}}>View Details</p>
+                  </div>
+                  <div>
+                  <h5>Sole luna</h5>
+                  <p style={{color:"black"}}>46000</p>
+                  </div>
+                  <div>
+                  <h5>Sole luna</h5>
+                  <p style={{color:"black"}}>46000</p>
+                  </div>
+                </div>
+                
+<div className='content-3'>
+               <input type="checkbox" name="restaurant" />
+                 <p>Restaurant</p>
+            <span>New</span>
+            </div>
+                 <div className='content-3'>
+               <input type="checkbox" name="restaurant" />
+                 <p>Restaurant</p>
+                 <span>New</span>
+                 </div>
+
+                     <div>
+                <h4>Restaurant</h4>
+                <p>Overview</p>
+              </div>
+
+              .details-1 div ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+li{
+  list-style:none;
+  padding: 5px;
+}
+
+
+div  
