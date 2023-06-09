@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
 import RestoInfoPage from "./Pages/RestoInfoPage";
 import Dashboard from "./Pages/Dashboard";
+import RegisterPage from "./Pages/RegisterPage";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <HomePage/> */}
       {/* <LoginPage/> */}
       {/* <RestoInfoPage /> */}
-      <Dashboard />
+      {/* <Dashboard /> */}
+      <RegisterPage />
     </div>
   );
 }

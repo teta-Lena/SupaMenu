@@ -151,6 +151,13 @@ p{
   border-radius: 10px;
 
 }
+.input-container-register{
+  margin: auto;
+  width: 40%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+}
 .title-container p{
   font-weight: bolder;
 }
@@ -174,7 +181,7 @@ p{
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 25px 30px;
+  margin: 20px 30px;
 }
 .field input{
   border-radius: 5px;
@@ -198,6 +205,14 @@ p{
   margin-top: 3em;
 }
 
+.input-container-register h5{
+  color:black;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 1em;
+}
+
 .loginsubmit{
   background-color: #f49e06;
   color: white;
@@ -209,7 +224,12 @@ p{
   color: black;
   padding: 10px;
 }
-
+.input-container-register .form-options{
+  font-weight: 200;
+  font-size: 14px;
+  color: black;
+  padding: 2px;
+}
 .restoinfo-container{
   width: 100%;
   height: 100vh;
@@ -373,6 +393,7 @@ p{
 }
 .details-1{
   width: 25%;
+  margin: 0px 20px;
   height: 50%;
 }
 .details-1 .detailed-stats{
