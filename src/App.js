@@ -8,17 +8,7 @@ import RegisterPage from "./Pages/RegisterPage";
 import RestoTypePage from "./Pages/RestoTypePage";
 import CreateMenu from "./Pages/CreateMenu";
 function App() {
-  return (
-    <div className="App">
-      {/* <HomePage/> */}
-      <LoginPage />
-      {/* <RestoInfoPage /> */}
-      {/* <Dashboard /> */}
-      {/* <RegisterPage /> */}
-      {/* <RestoTypePage /> */}
-      {/* <CreateMenu /> */}
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
