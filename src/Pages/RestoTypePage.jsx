@@ -101,7 +101,7 @@ const RestoTypePage = () => {
       </div>
       <div className='footer'>
         <div>
-            <button>Back</button>
+            <button> <FontAwesomeIcon icon={faArrowLeft}/> Back</button>
         </div>
         <div>
         <button>Next <FontAwesomeIcon icon={faArrowRight} style={{color:'white'}}/></button>

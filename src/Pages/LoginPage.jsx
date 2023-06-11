@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import userservices from "../services/userservices";
 
 const LoginPage = () => {
+  const [email,setEmail] = useState('');
+  const [password,setPassword] = useState('');
+  const dispatch = useDispatch();
+
+  const onChangeEmail = (e)=>{
+    setEmail(e.target.value);
+  }
+  const onChangePassword = (e) =>{
+    setPassword(e.target.value);
+  }
+  
+  const handleLogin = (e) =>{
+    e.preventDefault();
+
+  //   try{
+  //    const login = userservices.login({email,password});
+  //    if(login.data.token){
+  //   localStorage.setItem("user",JSON.stringify(login.data));
+  //   return "Logged in successfully"; 
+  // }
+  //   }catch(e){
+  //    const message= e.message;
+  //     message.toString();
+  //     return message;
+  //   }
+  
+
+  }
   return (
     <div className="auth-container">
       <div className="form-container">
@@ -13,10 +43,10 @@ const LoginPage = () => {
           <h5>Welcome</h5>
           <p className="login-title">Login to SupaMenu</p>
           <h6>Enter the email and password below</h6>
-          <form className="form-data">
+          <form className="form-data" onSubmit={handleLogin}>
             <div className="field">
               <div>EMAIL</div>
-              <input type="text " placeholder="Enter your email" />
+              <input type="text " onChange={onChangeEmail} placeholder="Enter your email" />
             </div>
             <div className="field">
               <label>PASSWORD </label>
@@ -24,6 +54,7 @@ const LoginPage = () => {
                 className="form-field"
                 type="text"
                 placeholder="Enter your password"
+                onChange={onChangePassword}
               />
             </div>
             <div className="field">

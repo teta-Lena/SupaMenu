@@ -1,5 +1,6 @@
 import React from "react";
-
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const RestoInfoPage = () => {
   return (
     <div className="restoinfo-container">
@@ -91,6 +92,15 @@ const RestoInfoPage = () => {
             </form>
           </div>
         </div>
+        <div className='footer'>
+        <div>
+            <button>  <FontAwesomeIcon icon={faArrowLeft}/> Back</button>
+        </div>
+        <div>
+        <button>Next <FontAwesomeIcon icon={faArrowRight}/> style={{color:'white'}}/></button>
+
+        </div>
+    </div>
       </div>
     </div>
   );

@@ -6,16 +6,17 @@ import RestoInfoPage from "./Pages/RestoInfoPage";
 import Dashboard from "./Pages/Dashboard";
 import RegisterPage from "./Pages/RegisterPage";
 import RestoTypePage from "./Pages/RestoTypePage";
-
+import CreateMenu from "./Pages/CreateMenu";
 function App() {
   return (
     <div className="App">
       {/* <HomePage/> */}
-      {/* <LoginPage/> */}
+      <LoginPage />
       {/* <RestoInfoPage /> */}
       {/* <Dashboard /> */}
       {/* <RegisterPage /> */}
-      <RestoTypePage />
+      {/* <RestoTypePage /> */}
+      {/* <CreateMenu /> */}
     </div>
   );
 }
