@@ -1,3 +1,5 @@
+import { faPerson, faReceipt, faSpoon, faUser, faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const HomePage = () => {
@@ -14,8 +16,8 @@ const HomePage = () => {
             </h2>
           </div>
         </div>
-        <div className="menu-header">
-          <p className="menu-header-p">Register your restaurant on SupaMenu</p>
+        <div className="home-header">
+          <p className="home-header-p">Register your restaurant on SupaMenu</p>
           <p className="sub-menu-header">for free and get more revenue</p>
           <div className="options-btns">
             <button>Register your restaurant</button>
@@ -28,14 +30,17 @@ const HomePage = () => {
         <p className="options-p">How it works</p>
         <div className="boxes">
           <div className="box-step">
+            <FontAwesomeIcon icon={faUser} className="boxes-icons" />
             <h4>Step 1</h4>
             <p>Register your restaurant</p>
           </div>
           <div className="box-step">
+            <FontAwesomeIcon icon={faUtensils} className="boxes-icons"/>
             <h4>Step 2</h4>
             <p>Create your restaurant profile and create menu items</p>
           </div>
           <div className="box-step">
+            <FontAwesomeIcon icon={faReceipt} className="boxes-icons"/>
             <h4>Step 3</h4>
             <p>Start receiving orders</p>
           </div>

@@ -54,18 +54,23 @@ p{
   font-size: 40px;
   padding: 0px 30px;
 }
-/* .menu-header{
-  display: block;
-} */
-.menu-header-p{
+
+.home-header-p{
   font-size: 20px;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 .sub-menu-header{
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 200;  
+  display: flex;
+  justify-content: center;
 }
-
+.options-btns{
+  display: flex;
+  justify-content: center;
+}
 .options-btns button:nth-child(1){
   padding: 10px 30px;
   border-radius: 5px;
@@ -74,6 +79,7 @@ p{
   background-color: #f49e06;
   border: none;
   font-weight: 500;
+
 }
 
 .options-btns button:nth-child(2){
@@ -84,16 +90,20 @@ p{
   background-color:black;
   border: 1px solid white;
   font-weight: 500;
+
 }
 .options{
   background-color: whitesmoke;
   height: 50%;  
+
 }
 .options-p{
   color: black;
   font-weight: bold;
   font-size: 25px;
-  /* padding: 3px; */
+  display: flex;
+  justify-content: center;
+  
 }
 
 .boxes{
@@ -117,13 +127,22 @@ p{
   margin: 10px;
   align-items: center;
 }
-
+.boxes-icons{
+  width: 100%;
+  font-size: 40px;
+  align-self: center;
+  padding: 20px 0;
+  color: #f49e06  ;
+}
 .box-step p{
   font-size: 15px;
   padding: 10px;
+  text-align: center;
   color: black;
 }
-
+.box-step h4{
+  text-align: center;
+}
 .auth-container{
   background-color: #f49e06;
   height: 100vh;
@@ -161,6 +180,8 @@ p{
 .title-container p{
   font-weight: bolder;
 }
+
+
 
 .sp-login{
   color: black;
