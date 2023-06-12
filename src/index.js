@@ -17,9 +17,10 @@ import "react-toastify/dist/ReactToastify.css";
 // import store from "./store";
 import axios from "axios";
 import Dashboard from "./Pages/Dashboard";
-
+import ProtectedRoute from "./components/ProtectedRoute";
 axios.defaults.baseURL = "http://localhost:4000/";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <ToastContainer />
@@ -28,7 +29,12 @@ root.render(
         <Route path="login" element={<LoginPage />} />
         <Route path="register" element={<RegisterPage />} />
         <Route path="" element={<HomePage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <ProtectedRoute path="dashboard" element={<Dashboard />} /> */}
+        <Route
+          exact
+          path="/dashboard"
+          element={<ProtectedRoute component={Dashboard} />}
+        />
         <Route path="restaurant" element={<RestoInfoPage />} />
         <Route path="restaurantdetails" element={<RestoTypePage />} />
         <Route path="drinksmenu" element={<CreateMenu />} />

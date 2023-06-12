@@ -39,7 +39,7 @@ const RegisterPage = () => {
       
       console.log(res.data);
       toast.success("User added successfully");
-      
+      localStorage.setItem("token", res.data.token);
       navigate('/dashboard');
     }catch(e){
       console.log(e);
