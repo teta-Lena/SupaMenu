@@ -391,7 +391,7 @@ text-align: center;
   display: flex;
   justify-content: space-evenly;
   margin: 20px;
-  height: 20%;
+  height: 15%;
   align-items: center;
 }
 .num-stats p {
@@ -399,7 +399,7 @@ text-align: center;
 }
 .num-stats div{
   width: 20%;
-  height: 60%;
+  height: 100%;
   background-color: blanchedalmond;
   padding: 10px;
   border-radius: 10px;
@@ -411,9 +411,6 @@ text-align: center;
 .num-stats div h6{
   font-size: 25px;
   margin-top: 5px;
-}
-.dash-graph {
-  height: 30%;
 }
 .dash-data-details{
   display: flex;

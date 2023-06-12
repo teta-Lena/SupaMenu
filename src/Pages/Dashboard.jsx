@@ -1,8 +1,33 @@
-import React from 'react'
+import React, { useEffect,useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import jwtDecode from 'jwt-decode';
 import { faAdd, faChartPie, faPeopleGroup, faScrewdriverWrench, faTicket, faUser } from '@fortawesome/free-solid-svg-icons'
+import axios from 'axios';
 
 const Dashboard = () => {
+  const token = localStorage.getItem("token");
+  const navigate = useNavigate();
+  const [user,setUser] = useState({});
+  if(!token || token == null){
+    navigate('/login');
+  }
+  const {id} = jwtDecode(token);  
+
+  const getUser = async()=> {
+    
+    try {
+      const user = await axios.get(`/u/${id}`);
+      console.log(user.data.data);
+      setUser(user.data.data);
+
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  useEffect(()=>{
+getUser();
+  },[])
   return (
     <div className='dash-container'>
       <div className='dash-nav'>
@@ -29,6 +54,11 @@ const Dashboard = () => {
        </div>
       </div>
       <div className='dash-body'>
+         <div className='flex justify-end py-4 items-center'>
+      <li className='list-none'><FontAwesomeIcon icon={faUser} className='px-5 '/>
+       </li> <li className='list-none pr-10'>{user.fullnames}</li>
+        <li className='list-none  ml-2 mr-10 px-5 text-white bg-red-400 py-2 '>Logout</li>
+        </div>
         <div className='num-stats'>
             <div>
                 <p>Clients</p>
