@@ -49,20 +49,6 @@ const RegisterPage = () => {
     reset();
   }
 
-  // const saveData = async(e) =>{
-    // e.preventDefault();
- 
-    // try{
-
-    //   const res = await axios.post("/u/addUser",data);
-      
-    //   console.log(res.data);
-    // }catch(e){
-    //   console.log(e.message);
-    // }
-
-  // }
-
   return (
     <div className="auth-container">
       <div className="form-container">

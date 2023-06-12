@@ -1,35 +1,43 @@
 import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
+import {useForm} from 'react-hook-form';
+import * as yup from 'yup'
+import { yupResolver } from "@hookform/resolvers/yup";
+import axios from "axios";
+import {toast} from 'react-toastify'
+import { useNavigate } from "react-router-dom";
 
 
+const validSchema = yup.object().shape({
+  email:yup.string().required().email(),
+  password:yup.string().required()
+})
 const LoginPage = () => {
-  const [email,setEmail] = useState('');
-  const [password,setPassword] = useState('');
-  // const dispatch = useDispatch();
-
-  const onChangeEmail = (e)=>{
-    setEmail(e.target.value);
-  }
-  const onChangePassword = (e) =>{
-    setPassword(e.target.value);
-  }
+ 
+  const [credentials,setCredentials] = useState({email:"",password:""});
+  const navigate = useNavigate();
+  const {register,handleSubmit , formState:{errors},reset} = useForm({resolver:yupResolver(validSchema)});
   
-  const handleLogin = (e) =>{
-    e.preventDefault();
 
-  //   try{
-  //    const login = userservices.login({email,password});
-  //    if(login.data.token){
-  //   localStorage.setItem("user",JSON.stringify(login.data));
-  //   return "Logged in successfully"; 
+  // const handleChange = (e) =>{
+  //   setCredentials({...credentials,[e.target.name]:e.target.value});
   // }
-  //   }catch(e){
-  //    const message= e.message;
-  //     message.toString();
-  //     return message;
-  //   }
-  
 
+  const onSubmitHandler = async(credentials,e)=>{
+    e.preventDefault();
+    try {
+      const res = await axios.post("/u/login",credentials);
+      console.log(res);
+
+      toast.success(res.data.message);
+      localStorage.setItem("token", res.data.token);
+
+      navigate('/dashboard');
+    } catch (e) {
+      console.log(e);
+         toast.error(e.response.data.message);  
+    }
+    
+    reset();
   }
   return (
     <div className="auth-container">
@@ -43,19 +51,27 @@ const LoginPage = () => {
           <h5>Welcome</h5>
           <p className="login-title">Login to SupaMenu</p>
           <h6>Enter the email and password below</h6>
-          <form className="form-data" onSubmit={handleLogin}>
+          <form className="form-data" onSubmit={handleSubmit(onSubmitHandler)}>
             <div className="field">
               <div>EMAIL</div>
-              <input type="text " onChange={onChangeEmail} placeholder="Enter your email" />
+              {/* not needed we can use register */}
+              {/* onChange={handleChange} value={credentials.email} */}
+              <input type="text " name="email"  {...register("email")} placeholder="Enter your email" />
+               <p className="text-red-800">{errors.email?.message}</p>
             </div>
             <div className="field">
+               {/* not needed we can use register */}
+              {/* onChange={handleChange} value={credentials.email} */}
               <label>PASSWORD </label>
               <input
                 className="form-field"
                 type="text"
+                name="password"
+                {...register("password")}
                 placeholder="Enter your password"
-                onChange={onChangePassword}
               />
+               <p className="text-red-800">{errors.password?.message}</p>
+
             </div>
             <div className="field">
               <input type="submit" value="Log in" className="loginsubmit" />
