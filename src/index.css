@@ -161,6 +161,9 @@ p{
 }
 .title-container p{
   font-size: 60px;
+   display: flex;
+   justify-content: center  ;
+   font-weight: bolder;
 }
 .input-container {
   margin: auto;
@@ -177,11 +180,6 @@ p{
   background-color: white;
   border-radius: 10px;
 }
-.title-container p{
-  font-weight: bolder;
-}
-
-
 
 .sp-login{
   color: black;
@@ -227,11 +225,13 @@ p{
 }
 
 .input-container-register h5{
-  color:black;
+  color:rgb(0, 0, 0);
   font-weight: bold;
   padding: 10px;
   font-size: 20px;
   margin-top: 1em;
+  text-align: center;
+  
 }
 
 .loginsubmit{
@@ -244,12 +244,7 @@ p{
   font-size: 14px;
   color: black;
   padding: 10px;
-}
-.input-container-register .form-options{
-  font-weight: 200;
-  font-size: 14px;
-  color: black;
-  padding: 2px;
+  text-align: center;
 }
 .restoinfo-container{
   width: 100%;
